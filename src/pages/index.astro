@@ -1,11 +1,182 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Clean slate with no broken imports!
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HerWAY Forward Project | Davis Projects for Peace</title>
+		<meta name="description" content="Empowering first-time teenage mothers in Gasabo District, Rwanda to reclaim their education and build self-determined futures." />
+	</head>
+	<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+		
+		<!-- Header / Navigation -->
+		<header class="bg-white border-b border-slate-100 py-6 sticky top-0 z-50">
+			<nav class="max-w-4xl mx-auto px-6 flex justify-between items-center">
+				<div class="flex items-center space-x-3">
+					<span class="font-bold text-slate-900 tracking-tight text-lg">HerWAY Forward Project</span>
+				</div>
+				<div class="space-x-6 text-sm font-medium text-slate-600">
+					<a href="/" class="text-indigo-600 hover:text-indigo-800 transition-colors">Home</a>
+				</div>
+			</nav>
+		</header>
+		
+		<main class="flex-grow max-w-4xl mx-auto px-6 py-12 md:py-20">
+			
+			<!-- Hero Section -->
+			<section class="mb-16">
+				<div class="space-y-6">
+					<div class="inline-flex flex-wrap gap-2">
+						<span class="text-xs font-semibold tracking-wider uppercase text-amber-700 bg-amber-50 border border-amber-100 px-3 py-1 rounded-full">
+							Davis Projects for Peace Fellow
+						</span>
+						<span class="text-xs font-semibold tracking-wider uppercase text-indigo-700 bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-full">
+							Gasabo District, Rwanda
+						</span>
+					</div>
+					
+					<h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+						HerWAY Forward Project
+					</h1>
+					
+					<p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl font-light">
+						A community-centered project empowering first-time teenage mothers (ages 15–19) in Rwanda to reclaim their education, realize their potential, and build confident, independent futures.
+					</p>
+
+					<div class="pt-2 text-sm text-slate-500">
+						Led by <strong class="text-slate-700 font-semibold">Sandrine Uwantege</strong> | Washington and Lee University
+					</div>
+				</div>
+			</section>
+
+			<!-- Mission & Vision Cards -->
+			<section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+				<div class="bg-indigo-900 text-white p-8 rounded-2xl shadow-sm space-y-3">
+					<h3 class="text-xs font-bold tracking-widest uppercase text-indigo-200">Our Mission</h3>
+					<p class="text-lg leading-relaxed">
+						To empower first-time teenage mothers in Rwanda to reclaim their education, realize their potential, and build confident, independent futures through personalized planning and communities of support.
+					</p>
+				</div>
+				<div class="bg-emerald-900 text-white p-8 rounded-2xl shadow-sm space-y-3">
+					<h3 class="text-xs font-bold tracking-widest uppercase text-emerald-200">Our Vision</h3>
+					<p class="text-lg leading-relaxed">
+						A Rwanda where early pregnancy no longer ends a young woman's dreams, where every teenage mother finds her path to education, good health, and financial independence.
+					</p>
+				</div>
+			</section>
+
+			<!-- Our Story / Core Concept -->
+			<section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 border-t border-slate-200 pt-12">
+				<div class="md:col-span-1">
+					<h2 class="text-2xl font-black tracking-tight text-slate-900 uppercase">Our Story</h2>
+					<p class="text-sm text-slate-400 mt-1">Belief in her potential</p>
+				</div>
+				<div class="md:col-span-2 space-y-6 text-slate-600 leading-relaxed text-base">
+					<p>
+						Before pregnancy, these young women had dreams, goals, and a clear path ahead. Life changed, but their strength, passion, and potential did not.
+					</p>
+					<p class="font-medium text-slate-900">
+						We do not see her as a "teen mom." We see a young woman who paused and is now ready to move forward: skilled, confident, and supported.
+					</p>
+				</div>
+			</section>
+
+			<!-- The IEP Framework / Project Approach -->
+			<section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 border-t border-slate-200 pt-12">
+				<div class="md:col-span-1">
+					<h2 class="text-2xl font-black tracking-tight text-slate-900 uppercase">Project Approach</h2>
+					<p class="text-sm text-slate-400 mt-1">The Individualized Empowerment Program (IEP)</p>
+				</div>
+				<div class="md:col-span-2 space-y-6">
+					<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+						<h3 class="text-lg font-bold text-slate-900">The IEP Roadmap</h3>
+						<p class="text-slate-600 text-sm leading-relaxed">
+							A personalized roadmap built around each participant's educational background, interests, pace, and goals. Working alongside a dedicated mentor, each mother assesses her past learning to choose between returning to formal school or pursuing alternative educational pathways.
+						</p>
+					</div>
+
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+						<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-2">
+							<h4 class="font-bold text-slate-950">Skills & Inspiration</h4>
+							<p class="text-xs text-slate-600">Vocational workshops tailored to strengths, featuring guest speakers who share stories of growth and resilience.</p>
+						</div>
+						<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-2">
+							<h4 class="font-bold text-slate-950">SRHR Education</h4>
+							<p class="text-xs text-slate-600">Age-appropriate, rights-based health education to understand their bodies, protect their health, and make informed choices.</p>
+						</div>
+						<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-2">
+							<h4 class="font-bold text-slate-950">Financial Literacy</h4>
+							<p class="text-xs text-slate-600">Practical training in budgeting and saving, integrated with peer-led saving groups to build financial independence.</p>
+						</div>
+						<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-2">
+							<h4 class="font-bold text-slate-950">Dedicated Mentorship</h4>
+							<p class="text-xs text-slate-600">A 2:1 participant-to-mentor ratio ensuring continuous guidance, accountability, and emotional support.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Program Details & Eligibility -->
+			<section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 border-t border-slate-200 pt-12">
+				<div class="md:col-span-1">
+					<h2 class="text-2xl font-black tracking-tight text-slate-900 uppercase">Eligibility & Selection</h2>
+					<p class="text-sm text-slate-400 mt-1">Serving 20 young mothers in Gasabo District</p>
+				</div>
+				<div class="md:col-span-2 space-y-6">
+					<div class="bg-slate-100 p-6 rounded-xl">
+						<h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">Criteria for Participation</h4>
+						<ul class="space-y-2 text-sm text-slate-700">
+							<li class="flex items-center gap-2">✓ First-time teenage mother</li>
+							<li class="flex items-center gap-2">✓ Between 15 and 19 years of age</li>
+							<li class="flex items-center gap-2">✓ Dropped out of school</li>
+							<li class="flex items-center gap-2">✓ Resides in Gasabo District</li>
+							<li class="flex items-center gap-2">✓ Willing and able to attend weekly sessions</li>
+						</ul>
+					</div>
+					<div class="space-y-2">
+						<h4 class="font-bold text-slate-900">Partner-Driven Selection</h4>
+						<p class="text-sm text-slate-600 leading-relaxed">
+							Participants are identified and selected in coordination with local Gasabo District leaders and <strong class="text-slate-800">Informed Future Generations</strong> through a three-step referral, evaluation, and mentor pairing process.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Anticipated Outcomes -->
+			<section class="border-t border-slate-200 pt-12">
+				<h2 class="text-2xl font-black tracking-tight text-slate-900 uppercase mb-8 text-center">Anticipated Impact</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+					<div class="space-y-2">
+						<div class="h-1 w-8 bg-indigo-600"></div>
+						<h4 class="font-bold text-slate-900">Growth & Agency</h4>
+						<p class="text-xs text-slate-600 leading-relaxed">Clear paths toward school enrollment or technical skillsets, paired with increased parenting confidence.</p>
+					</div>
+					<div class="space-y-2">
+						<div class="h-1 w-8 bg-emerald-600"></div>
+						<h4 class="font-bold text-slate-900">Health & Finance</h4>
+						<p class="text-xs text-slate-600 leading-relaxed">Comprehensive SRHR knowledge to make informed decisions and structured peer-led savings skills.</p>
+					</div>
+					<div class="space-y-2">
+						<div class="h-1 w-8 bg-amber-600"></div>
+						<h4 class="font-bold text-slate-900">Sustained Community</h4>
+						<p class="text-xs text-slate-600 leading-relaxed">Lifelong emotional support networks and saving groups that actively combat social isolation and stigma.</p>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<!-- Footer -->
+		<footer class="bg-white border-t border-slate-100 py-12 text-center space-y-2">
+			<div class="text-sm font-semibold text-slate-800">
+				HerWAY Forward: To Dreams. To Confidence. To Passion. To the Future. Together.
+			</div>
+			<div class="text-xs text-slate-400">
+				&copy; {new Date().getFullYear()} HerWAY Forward Project. Led by Sandrine Uwantege.
+			</div>
+		</footer>
+	</body>
+</html>
